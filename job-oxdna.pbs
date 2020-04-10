@@ -1,0 +1,13 @@
+#PBS -N Init_Config_Test
+#PBS -q qcondo
+#PBS -j oe
+#PBS -m n
+#PBS -o zzz.$PBS_JOBID
+#PBS -l nodes=1:ppn=6:dford
+#PBS -l walltime=4:00:00
+cd /home/jcalumba/oxdna-relax/tenth
+module purge
+module load gcc/6.3.1  mkl/18.0.2 vmd/1.9.3 python/3.7.3-anaconda arbd/jan18
+module list
+export PATH=$PATH:~/oxDNA/build/bin
+oxDNA input >> ../progress/oxdna-temp.txt
