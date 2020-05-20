@@ -8,6 +8,12 @@ pair4 = 30,72
 pair5 = 32, 70
 }
 {
+order_parameter = bond
+name = unwanted bonds
+pair1 = 41, 127
+pair2 = 70, 98
+}
+{
 order_parameter = mindistance
 name = distance
 pair1 = 4, 98
